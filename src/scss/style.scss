@@ -3,264 +3,262 @@
 @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
 
 
-body {
-    font-family: $font-montserrat;
-    background-color: $dark-grey;
-}
+// body {
+//     font-family: $font-montserrat;
+//     background-color: $dark-grey;
+// }
 
 
-#top-header {
-    height: 48px;
-    background-color: $light-grey;
-    color: #fff;
-    font-size: 9px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
+// #top-header {
+//     height: 48px;
+//     background-color: $light-grey;
+//     color: #fff;
+//     font-size: 9px;
+//     font-weight: bold;
+//     text-transform: uppercase;
+// }
 
-#bottom-header {
-    background-color: $dark-grey;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: bold;
-}
+// #bottom-header {
+//     background-color: $dark-grey;
+//     text-transform: uppercase;
+//     font-size: 12px;
+//     font-weight: bold;
+// }
 
-#logo {
-    height: 152px;
-}
+// #logo {
+//     height: 152px;
+// }
 
-#search-area-header {
-    height: 90px;
-    color: #fff;
-    font-size: 9px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
+// #search-area-header {
+//     height: 90px;
+//     color: #fff;
+//     font-size: 9px;
+//     font-weight: bold;
+//     text-transform: uppercase;
+// }
 
-#search-row {
-    position: relative;
-    top: 50%;
-    margin-top: -18px;
-}
+// #search-row {
+//     position: relative;
+//     top: 50%;
+//     margin-top: -18px;
+// }
 
-#navbar-row {
-    background-color: $light-grey;
-    height: 62px;
-}
+// #navbar-row {
+//     background-color: $light-grey;
+//     height: 62px;
+// }
 
-.nav-item.active {
-    border-bottom: 2px solid $yellow;
-}
+// .nav-item.active {
+//     border-bottom: 2px solid $yellow;
+// }
 
 
-.navbar-row-bg {
-    height: 62px;
-    border-left: 30px solid $dark-grey;
-    border-bottom: 62px solid transparent;
-    position: absolute;
-}
+// .navbar-row-bg {
+//     height: 62px;
+//     border-left: 30px solid $dark-grey;
+//     border-bottom: 62px solid transparent;
+//     position: absolute;
+// }
 
-.navbar-nav,
-.navbar-nav .nav-item {
-    height: 62px;
-}
+// .navbar-nav,
+// .navbar-nav .nav-item {
+//     height: 62px;
+// }
 
-.navbar-nav .nav-item li {
-    margin-top: 15px;
-}
+// .navbar-nav .nav-item li {
+//     margin-top: 15px;
+// }
 
-.nav-link {
-    color: #fff;
-}
+// .nav-link {
+//     color: #fff;
+// }
 
-.menu-divider {
-    color: $text-grey !important;
-}
+// .menu-divider {
+//     color: $text-grey !important;
+// }
 
 .nav-link:hover,
 .yellow {
-    color: $yellow;
+	color: $yellow;
 }
 
 .f9 {
-    font-size: $f-9;
+	font-size: $f-9;
 }
 
 .f11 {
-    font-size: $f-11;
+	font-size: $f-11;
 }
 
 .f12 {
-    font-size: $f-12;
+	font-size: $f-12;
 }
 
-.text-grey {
-    color: $text-grey;
-}
+// .text-grey {
+// 	color: $text-grey;
+// }
 
-.search-bar {
-    background-color: $light-grey;
-    border-radius: 25px
-}
+// .search-bar {
+// 	background-color: $light-grey;
+// 	border-radius: 25px
+// }
 
-.font-montserrat {
-    font-family: $font-montserrat;
-    font-size: 12px;
-}
+// .font-montserrat {
+// 	font-family: $font-montserrat;
+// 	font-size: 12px;
+// }
 
-.font-source {
-    font-family: $font-source-sans-pro;
-    font-size: 12px;
-}
+// .font-source {
+// 	font-family: $font-source-sans-pro;
+// 	font-size: 12px;
+// }
 
-.bottom-header-right-bg {
-    height: 62px;
-    width: 100%;
-    position: absolute;
-    top: 138px;
-    background-color: $light-grey;
-}
+// .bottom-header-right-bg {
+// 	height: 62px;
+// 	width: 100%;
+// 	position: absolute;
+// 	top: 138px;
+// 	background-color: $light-grey;
+// }
 
-.sidebar-burger-button {
-    background-color: $yellow;
-    color: $dark-grey;
-    height: 100%;
-    width: 64px;
-}
+// .sidebar-burger-button {
+// 	background-color: $yellow;
+// 	color: $dark-grey;
+// 	height: 100%;
+// 	width: 64px;
+// }
 
-.sidebar-burger-button a {
-    margin-top: 11px;
-}
+// .sidebar-burger-button a {
+// 	margin-top: 11px;
+// }
 
-.tooltip-inner {
-    background-color: $yellow;
-    color: $dark-grey;
-    @extend .f11;
-    font-weight: 700;
-}
+// .tooltip-inner {
+// 	background-color: $yellow;
+// 	color: $dark-grey;
+// 	@extend .f11;
+// 	font-weight: 700;
+// }
 
-.bs-tooltip-auto[x-placement^=bottom] .arrow:before,
-.bs-tooltip-bottom .arrow:before {
-    border-bottom-color: $yellow;
-}
+// .bs-tooltip-auto[x-placement^=bottom] .arrow:before,
+// .bs-tooltip-bottom .arrow:before {
+// 	border-bottom-color: $yellow;
+// }
 
 .carousel-indicators {
-    height: 280px;
-    position: inherit !important;
-    margin: 0%;
+	height: 280px;
+	position: inherit !important;
+	margin: 0%;
 }
 
 .carousel-indicators img {
-    height: 280px;
-    position: inherit !important;
-    width: 100%;
+	height: 280px;
+	position: inherit !important;
+	width: 100%;
 }
 
 .carousel-indicators ul {
- padding: 0;
+	padding: 0;
 }
 
 .carousel-indicators li {
-    position: relative;
-    flex: none;
-    margin-right: 25px;
-    margin-left: 25px;
-    text-indent: 0;
-    display: inline-flex;
-    background-color: hsla(0,0%,100%,0);
-    font-family: $font-montserrat;
-    font-size: 10px;
-    margin-top: 20px;
+	position: relative;
+	flex: none;
+	margin-right: 25px;
+	margin-left: 25px;
+	text-indent: 0;
+	display: inline-flex;
+	background-color: hsla(0, 0%, 100%, 0);
+	font-family: $font-montserrat;
+	font-size: 10px;
+	margin-top: 20px;
 }
 
 
 
 .slider {
-    display: block;
-    position: relative;
+	display: block;
+	position: relative;
 }
 
 .thumbnails {
-    display: block;
-    background-color: #0e0f10;
+	display: block;
+	background-color: #0e0f10;
 }
 
 
 .carousel-item {
-    height: 640px;
-    background-size: cover;
-    background-position-y: 50%;
+	height: 640px;
+	background-size: cover;
+	background-position-y: 50%;
 }
 
 .carousel-item-1 {
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/1320x580-77.jfif");
+	background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/1320x580-77.jfif");
 }
 
 .carousel-item-2 {
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/1320x580-74.jfif");
+	background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/1320x580-74.jfif");
 }
 
 .carousel-item-3 {
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/1320x580-78.jfif");
+	background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/252820/1320x580-78.jfif");
 }
 
 .control-prev,
 .control-next {
-    position: absolute;
-    margin-top: 120px;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-align: center;
-    width: 36px;
-    height: 36px;
-    border: 2px solid $yellow;
-    border-radius: 50%;
-    padding-top: 5px;
+	position: absolute;
+	margin-top: 120px;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	text-align: center;
+	width: 36px;
+	height: 36px;
+	border: 2px solid $yellow;
+	border-radius: 50%;
+	padding-top: 5px;
 }
 
 .control-prev {
-    left: 34%
+	left: 34%
 }
 
 .control-next {
-    left: 64.2%
+	left: 64.2%
 }
 
 .thumbnail {
-    position: relative;
-    width: 500px;
-    color: #fff;
-    opacity: 0.3;
+	position: relative;
+	width: 500px;
+	color: #fff;
+	opacity: 0.3;
 }
 
 
 .thumbnail.active {
-    border-top: 6px solid $yellow;
-    opacity: 1;
+	border-top: 6px solid $yellow;
+	opacity: 1;
 }
 
 .thumbnail-highlight {
-    font-size: $f-10;
-    background-color: $yellow;
-    border-radius: 3px;
-    display: inline-block;
-    padding: 5px 15px 5px 15px;
-    font-weight: 700;
+	font-size: $f-10;
+	background-color: $yellow;
+	border-radius: 3px;
+	display: inline-block;
+	padding: 5px 15px 5px 15px;
+	font-weight: 700;
 }
 
 .thumbnail-header {
-    font-family: $font-montserrat;
-    font-weight: 700;
-    font-size: 18px;
+	font-family: $font-montserrat;
+	font-weight: 700;
+	font-size: 18px;
 }
 
 .thumbnail-date {
-    font-family: $font-montserrat;
-    font-size: $f-11;
-    color: $light-grey;
+	font-family: $font-montserrat;
+	font-size: $f-11;
+	color: $light-grey;
 }
 
-.thumbnail-list {
-
-}
+.thumbnail-list {}

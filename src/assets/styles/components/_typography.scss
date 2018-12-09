@@ -17,14 +17,19 @@ h6 {
 }
 
 h1 {
-    font-size: $font-size-xl;
-    color: blue;
+	font-size: $font-size-xl;
 }
 
 h2 {
-    font-size: $font-size-l;
+	font-size: $font-size-l;
 }
 
 h3 {
-    font-size: $font-size-m;
+	font-size: $font-size-m;
+}
+
+.text {
+	&-accent {
+		color: $accent-color;
+	}
 }

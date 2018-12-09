@@ -1,2 +1,15 @@
+@import "vars";
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+
+.bs-tooltip-auto[x-placement^=bottom] .arrow:before,
+.bs-tooltip-bottom .arrow:before {
+	border-bottom-color: $accent-color;
+}
+
+.tooltip-inner {
+	background-color: $accent-color;
+	color: $shark;
+	font-size: $font-size-xs;
+	font-weight: 700;
+}
