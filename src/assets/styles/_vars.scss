@@ -1,5 +1,3 @@
-// colors
-
 // grayscales
 
 $black: #000;
@@ -9,6 +7,7 @@ $oxford-blue: #31404b;
 $nevada: #6b6d70;
 $manatee: #9a9da2;
 $white: #fff;
+$athens-gray: #EDEFF4;
 
 
 // yellow
@@ -18,8 +17,8 @@ $candlelight: #ffdc11;
 $accent-color: $candlelight;
 $muted-color: $nevada;
 
-$body-bg-color: $shark !default;
-$heading-color: $candlelight !default;
+$body-bg-color: $athens-gray !default;
+$heading-color: $oxford-blue !default;
 $body-text-color: $white !default;
 $base-font-family: 'Montserrat', sans-serif;
 $heading-font-family: 'Source Sans Pro', sans-serif;
