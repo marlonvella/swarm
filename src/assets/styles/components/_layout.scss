@@ -12,6 +12,8 @@ $main-menu-bg-color: $light-grey;
 $main-content-bg-color: $white;
 $footer-bg-color: $shark;
 $footer-border-color:$accent-color;
+$footer-p-color:$manatee;
+$global-variant-color: $variant-color;
 
 /**********************************************
 * Global
@@ -184,8 +186,7 @@ header {
 		&-trending-news,
 		&-advertisement,
 		&-newsletter,
-		&-next-match
-			{
+		&-next-match {
 			background-color: $main-content-bg-color;
 			width: 100%;
 			margin: 0 0 16px 0;
@@ -196,7 +197,8 @@ header {
 
 		// LEFT CONTENT
 
-		&-featured-news, &-latest-news {
+		&-featured-news,
+		&-latest-news {
 			height: 74px;
 		}
 
@@ -212,20 +214,21 @@ header {
 			&-row {
 				padding: 0 15px;
 			}
-	
+
 			&-left,
 			&-left-small {
 				padding: 0 8px 0 0;
 			}
-	
+
 			&-right,
 			&-right-small {
 				padding: 0 0 0 8px;
 			}
+
 			&-small {
 				height: 484px;
 			}
-	
+
 			&-horizontal {
 				height: 370px;
 			}
@@ -242,7 +245,9 @@ header {
 			height: 569px;
 		}
 
-		&-social-facebook, &-social-twitter, &-social-rss {
+		&-social-facebook,
+		&-social-twitter,
+		&-social-rss {
 			height: 66px;
 		}
 
@@ -280,18 +285,28 @@ header {
 * Footer
 ***********************************************/
 
-.footer{
+.footer {
 	&-wrapper {
 		background-color: $footer-bg-color;
 		padding: 0;
 	}
-	
+
 	&-container {
-		height: 476px;
+		height: 470px;
+		padding-top: 80px;
 	}
 
 	&-content {
-		height: 473px;
+
+		h5 {
+			font-family: $base-font-family;
+			font-size: 14px;
+			font-weight: 700;
+			color: $white;
+			text-transform: uppercase;
+			margin-bottom: 50px;
+		}
+
 	}
 
 	&-nav {
@@ -300,6 +315,8 @@ header {
 
 	&-logo {
 
+		margin-top: 55px;
+
 		img {
 			height: 192px;
 			width: auto;
@@ -307,16 +324,133 @@ header {
 
 	}
 
+	&-contact {
+
+		&-text {
+			font-family: $heading-font-family;
+			font-size: 14px;
+			color: $footer-p-color;
+			margin-bottom: 32px;
+			line-height: 24px;
+		}
+
+
+		&-us,
+		&-tryouts,
+			{
+			font-family: $base-font-family;
+			font-size: 9px;
+			text-transform: uppercase;
+			font-weight: 700;
+			padding-left: 15px;
+			margin-top: 28px !important;
+		}
+
+		&-tryouts {
+			margin-top: 10px;
+		}
+
+		&-icon {
+			padding-right: 15px;
+		}
+
+
+		&-social {
+
+			.fb-icon,
+			.tw-icon,
+			.gp-icon {
+				width: auto;
+				height: 10px;
+				padding-right: 10px;
+			}
+
+			.gp-icon {
+				color: $accent-color;
+			}
+
+			.nav-link {
+				padding: 0 0 0 15px;
+				font-family: $base-font-family;
+				font-size: 9px;
+				text-transform: uppercase;
+				font-weight: 700;
+				margin-top: 20px;
+			}
+
+		}
+
+	}
+
+	&-news {
+
+		&-title {
+			margin-bottom: 35px !important;
+		}
+
+		&-header {
+			font-size: 12px;
+			color: $white;
+			font-family: $base-font-family;
+			text-transform: uppercase;
+			font-weight: 700;
+			margin-bottom: 5px;
+		}
+
+		&-date {
+			font-size: 9px;
+			color: $footer-p-color;
+			font-family: $base-font-family;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+	}
+
+	&-highlight {
+		&-purple, &-yellow {
+			font-size: 8px;
+			border-radius: 3px;
+			display: inline-block;
+			padding: 2px 9px;
+			font-weight: 700;
+			margin-bottom: 8px;
+		}
+
+		&-purple {
+			background-color: $variant-color;
+		}
+
+		&-yellow {
+			background-color: $accent-color;
+		}
+		
+	}
+
 	&-widget {
 
+		&-row {
+			display: flex;
+			padding-right: 15px;
+		}
+
 		&-image {
-			height: 80px;
-			width: 80px;
+			height: 75px;
+			width: 75px;
 			background-color: darkgray;
 		}
+
 		&-image-container {
 			margin-bottom: 16px;
 			display: block;
+		}
+
+		.btn {
+			font-family: $base-font-family;
+			font-size: 9px;
+			text-transform: uppercase;
+			font-weight: 700;
+			width: 200px;
+			height: 34px;
 		}
 	}
 
@@ -340,7 +474,7 @@ header {
 		position: relative;
 	}
 
-	&-navbar-bg{
+	&-navbar-bg {
 		position: absolute;
 		height: 62px;
 		margin-left: 26%;
@@ -351,5 +485,4 @@ header {
 		border-top: 62px solid transparent;
 		background-color: $footer-bg-color;
 	}
-
 }
