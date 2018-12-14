@@ -11,6 +11,7 @@ $nav-menu-divider-color: $nevada;
 $main-menu-bg-color: $light-grey;
 $main-content-bg-color: $white;
 $footer-bg-color: $shark;
+$footer-border-color:$accent-color;
 
 /**********************************************
 * Global
@@ -155,6 +156,8 @@ header {
 
 	.content {
 
+		// GLOBAL CONTENT
+
 		&-left {
 			padding-right: 10px;
 		}
@@ -171,14 +174,27 @@ header {
 		&-card-horizontal,
 		&-list-group,
 		&-banner,
+		&-playoffs-standings,
+		&-social-facebook,
+		&-social-twitter,
+		&-social-rss,
+		&-popular-news,
+		&-banner-small,
+		&-results,
+		&-trending-news,
+		&-advertisement,
+		&-newsletter,
+		&-next-match
 			{
 			background-color: $main-content-bg-color;
 			width: 100%;
 			margin: 0 0 16px 0;
-			display: inline-flex;
+			display: block;
 			border-radius: 5px;
 			box-shadow: 0px 0px 0 1px #e4e7ed;
 		}
+
+		// LEFT CONTENT
 
 		&-featured-news, &-latest-news {
 			height: 74px;
@@ -219,6 +235,44 @@ header {
 		&-list-group {
 			height: 620px;
 		}
+
+		// RIGHT CONTENT
+
+		&-playoffs-standings {
+			height: 569px;
+		}
+
+		&-social-facebook, &-social-twitter, &-social-rss {
+			height: 66px;
+		}
+
+		&-popular-news {
+			height: 592px;
+		}
+
+		&-banner-small {
+			height: 198px;
+		}
+
+		&-results {
+			height: 728px;
+		}
+
+		&-trending-news {
+			height: 1115px;
+		}
+
+		&-advertisement {
+			height: 400px;
+		}
+
+		&-newsletter {
+			height: 294px;
+		}
+
+		&-next-match {
+			height: 542px;
+		}
 	}
 }
 
@@ -233,7 +287,7 @@ header {
 	}
 	
 	&-container {
-		height: 535px;
+		height: 476px;
 	}
 
 	&-content {
@@ -243,4 +297,59 @@ header {
 	&-nav {
 		height: 62px;
 	}
+
+	&-logo {
+
+		img {
+			height: 192px;
+			width: auto;
+		}
+
+	}
+
+	&-widget {
+
+		&-image {
+			height: 80px;
+			width: 80px;
+			background-color: darkgray;
+		}
+		&-image-container {
+			margin-bottom: 16px;
+			display: block;
+		}
+	}
+
+	&-navbar-wrapper {
+		padding: 0;
+		background: $footer-border-color;
+		height: 62px;
+
+		.nav-item {
+			padding: 0 2em 0 2em;
+		}
+
+		.nav-link {
+			height: 62px;
+			padding-top: 25px;
+			font-size: 11px;
+		}
+	}
+
+	&-navbar {
+		position: relative;
+	}
+
+	&-navbar-bg{
+		position: absolute;
+		height: 62px;
+		margin-left: 26%;
+		margin-right: 26%;
+		width: 48%;
+		border-right: 30px solid $footer-border-color;
+		border-left: 30px solid $footer-border-color;
+		border-top: 62px solid transparent;
+		background-color: $footer-bg-color;
+	}
+
 }
