@@ -14,6 +14,12 @@ $footer-bg-color: $shark;
 $footer-border-color:$accent-color;
 $footer-p-color:$manatee;
 $global-variant-color: $variant-color;
+$global-heading-dark-color: $oxford-blue;
+$global-muted-color: $manatee;
+$stats-muted-btn: $manatee;
+$global-section-border-color: $athens-gray;
+$card-heading-color: $oxford-blue;
+$card-text-muted-color: $manatee;
 
 /**********************************************
 * Global
@@ -171,9 +177,9 @@ header {
 		&-featured-news,
 		&-latest-news,
 		&-slider,
-		&-card,
-		&-card-small,
-		&-card-horizontal,
+		&-card-container,
+		&-card-small-container,
+		&-card-horizontal-container,
 		&-list-group,
 		&-banner,
 		&-playoffs-standings,
@@ -193,13 +199,64 @@ header {
 			display: block;
 			border-radius: 5px;
 			box-shadow: 0px 0px 0 1px #e4e7ed;
+			padding: 0;
 		}
 
 		// LEFT CONTENT
 
+		//Headers
+
 		&-featured-news,
-		&-latest-news {
+		&-playoffs-header-container,
+		&-popular-news-header,
+		&-results-header-container,
+		&-trending-news-header,
+		&-latest-news-header-container,
+		&-advertisement-header,
+		&-newsletter-header,
+		&-next-match-header {
+			border-left: 5px solid $accent-color;
+			position: relative;
 			height: 74px;
+			padding: 0;
+			border-bottom: 1px solid $global-section-border-color;
+
+			.stats {
+				font-size: 8px;
+				font-weight: 400;
+				border: 1px solid $stats-muted-btn;
+
+			}
+		}
+
+		&-header-container,
+		&-playoffs-title-container,
+		&-popular-news-title-container,
+		&-results-title-container,
+		&-trending-news-title-container,
+		&-latest-news-header-title-container,
+		&-advertisement-title-container,
+		&-newsletter-title-container,
+		&-next-match-title-container {
+			display: flex;
+			align-items: center;
+			height: 100%;
+
+			h3 {
+				font-family: $base-font-family;
+				font-size: 16px;
+				font-weight: 700;
+				text-transform: uppercase;
+				text-align: left;
+				margin: 0;
+			}
+		}
+
+
+
+		&-popular-news-header,
+		&-results-header {
+			padding: 0;
 		}
 
 		&-slider {
@@ -225,16 +282,44 @@ header {
 				padding: 0 0 0 8px;
 			}
 
-			&-small {
+			&-small-container {
 				height: 484px;
+
+				h5 {
+					margin-bottom: 0;
+				}
 			}
 
 			&-horizontal {
-				height: 370px;
+
+				&-container {
+					height: 370px;
+
+					.card-floating-icon {
+						left: 20px;
+						top: 20px;
+					}
+					
+					.list-group {
+						margin-top: 12px;
+					}
+
+					.card-date {
+						margin-bottom: 1.5rem;
+					}
+
+					.card-text {
+						font-size: 15px;
+					}
+
+					.fa-heart {
+						color: $global-muted-color;
+					}
+				}
 			}
 		}
 
-		&-card,
+		&-card-container,
 		&-list-group {
 			height: 620px;
 		}
@@ -243,6 +328,7 @@ header {
 
 		&-playoffs-standings {
 			height: 569px;
+			padding: 0;
 		}
 
 		&-social-facebook,
@@ -280,6 +366,188 @@ header {
 		}
 	}
 }
+
+.card {
+	background: none;
+	border: none;
+	border-radius: 0%;
+
+	&-row {
+		margin: 0;
+	}
+
+	&-img {
+		&-top {
+			height: 270px;
+			background: $card-heading-color;
+		}
+
+		&-container {
+			height: 370px;
+			padding: 0;
+		}
+
+		&-left {
+			height: 370px;
+			width: 100%;
+			background: $card-heading-color;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+		}
+	}
+
+	&-img-highlight {
+		position: absolute;
+		display: block;
+		top: 22px;
+		left: 22px;
+		font-size: 10px !important;
+		padding: 3px 11px !important;
+
+		&-horizontal {
+			position: relative;
+			font-size: 10px !important;
+			padding: 3px 11px !important;
+			margin-bottom: 15px!important
+		}
+	}
+
+	&-floating-icon {
+		position: absolute;
+		display: block;
+		height: 50px;
+		width: 50px;
+		right: 20px;
+		top: 245px;
+		border-radius: 50%;
+		background-color: $accent-color;
+		text-align: center;
+		padding-top: 14px;
+	}
+
+	&-date {
+		font-family: $base-font-family;
+		font-size: 11px;
+		font-weight: 400;
+		text-transform: uppercase;
+		text-align: left;
+		color: $card-text-muted-color;
+	}
+
+	&-title, &-title-horizontal {
+		font-family: $base-font-family;
+		font-size: 22px;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-align: left;
+		color: $card-heading-color;
+		margin-bottom: 1.75rem;
+
+	}
+
+	&-title-horizontal {
+		margin-bottom: 0.5rem;
+	}
+
+	&-text {
+		font-family: $heading-font-family;
+		font-size: 14px;
+		font-weight: 400;
+		text-align: left;
+		color: $card-text-muted-color;
+		margin-bottom: 30px !important;
+	}
+
+	.list-group-container {
+		margin-top: 23px;
+	}
+	.list-group {
+		height: 57px;
+		display: flex;
+	}
+
+	.list-group-item {
+		display: flex;
+		align-items: center;
+		height: 100%;
+
+		p {
+			font-family: $base-font-family;
+			font-size: 10px;
+			font-weight: 400;
+			text-transform: uppercase;
+			text-align: left;
+			color: $card-text-muted-color;
+			margin: 0 0 0 10px;
+
+		}
+
+	}
+
+	&-profile-container {
+		display: flex;
+		align-items: center;
+		padding: 0;
+	}
+
+	&-profile-pic {
+		height: 25px;
+		width: 25px;
+		background: $accent-color;
+		border-radius: 50%;
+		position: relative;
+	}
+
+	&-profile-stat-icons {
+		display: flex;
+		padding: 0;
+
+
+		.fa-heart {
+			color: #f1365e;
+		}
+
+		p {
+			margin: 0 0 0 20px !important;
+		}
+	}
+
+
+
+}
+
+.global-variant-color {
+	background-color: $global-variant-color;
+}
+
+/* Filter CSS */
+.filters {
+
+	button {
+		font-family: $base-font-family;
+		font-size: 11px;
+		font-weight: 700;
+		text-transform: uppercase;
+		background: transparent;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		outline: 0;
+		color: $global-muted-color;
+
+		span {
+			// display: block;
+			padding-bottom: 5px;
+			-webkit-transition: border-color .4s ease-in-out;
+			transition: border-color .4s ease-in-out;
+		}
+
+		&.active span {
+			color: $global-heading-dark-color;
+		}
+	}
+
+}
+
 
 /**********************************************
 * Footer
@@ -406,25 +674,6 @@ header {
 		}
 	}
 
-	&-highlight {
-		&-purple, &-yellow {
-			font-size: 8px;
-			border-radius: 3px;
-			display: inline-block;
-			padding: 2px 9px;
-			font-weight: 700;
-			margin-bottom: 8px;
-		}
-
-		&-purple {
-			background-color: $variant-color;
-		}
-
-		&-yellow {
-			background-color: $accent-color;
-		}
-		
-	}
 
 	&-widget {
 
@@ -484,5 +733,30 @@ header {
 		border-left: 30px solid $footer-border-color;
 		border-top: 62px solid transparent;
 		background-color: $footer-bg-color;
+	}
+}
+
+.content,
+.footer {
+	&-highlight {
+
+		&-purple,
+		&-yellow {
+			font-size: 8px;
+			border-radius: 3px;
+			display: inline-block;
+			padding: 2px 9px;
+			font-weight: 700;
+			margin-bottom: 8px;
+		}
+
+		&-purple {
+			background-color: $variant-color;
+		}
+
+		&-yellow {
+			background-color: $accent-color;
+		}
+
 	}
 }
