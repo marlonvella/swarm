@@ -176,7 +176,7 @@ header {
 
 		&-featured-news,
 		&-latest-news,
-		&-slider,
+		&-slider-container,
 		&-card-container,
 		&-card-small-container,
 		&-card-horizontal-container,
@@ -259,7 +259,7 @@ header {
 			padding: 0;
 		}
 
-		&-slider {
+		&-slider-container {
 			height: 410px;
 		}
 
@@ -292,16 +292,17 @@ header {
 
 			&-horizontal {
 
+				&-body {
+					min-height: 313px;
+				}
+
 				&-container {
 					height: 370px;
+
 
 					.card-floating-icon {
 						left: 20px;
 						top: 20px;
-					}
-					
-					.list-group {
-						margin-top: 12px;
 					}
 
 					.card-date {
@@ -314,6 +315,10 @@ header {
 
 					.fa-heart {
 						color: $global-muted-color;
+					}
+
+					.card-body {
+						min-height: 313px;
 					}
 				}
 			}
@@ -385,14 +390,14 @@ header {
 		&-container {
 			height: 370px;
 			padding: 0;
+			background: $card-heading-color;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
 		}
 
 		&-left {
 			height: 370px;
 			width: 100%;
-			background: $card-heading-color;
-			border-top-left-radius: 5px;
-			border-bottom-left-radius: 5px;
 		}
 	}
 
@@ -408,7 +413,7 @@ header {
 			position: relative;
 			font-size: 10px !important;
 			padding: 3px 11px !important;
-			margin-bottom: 15px!important
+			margin-bottom: 15px !important
 		}
 	}
 
@@ -434,7 +439,8 @@ header {
 		color: $card-text-muted-color;
 	}
 
-	&-title, &-title-horizontal {
+	&-title,
+	&-title-horizontal {
 		font-family: $base-font-family;
 		font-size: 22px;
 		font-weight: 700;
@@ -461,6 +467,7 @@ header {
 	.list-group-container {
 		margin-top: 23px;
 	}
+
 	.list-group {
 		height: 57px;
 		display: flex;

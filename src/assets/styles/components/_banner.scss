@@ -5,6 +5,7 @@ $carousel-item-infobox-text-color: $white;
 $carousel-item-infobox-span: $accent-color;
 $carousel-item-infobox-p-text: $heading-font-family;
 $carousel-bg-color: $shark;
+$slider-muted-color-bg: $manatee;
 
 .carousel {
 	position: relative;
@@ -48,23 +49,24 @@ $carousel-bg-color: $shark;
 					padding: 5px 15px 5px 15px;
 					font-weight: 700;
 				}
-			
+
 				&-header {
 					font-weight: 700;
 					font-size: 18px;
 					color: $white;
 				}
-			
+
 				&-date {
 					font-size: 11px;
 					color: $white;
 				}
+
 				&-list {
 					display: flex;
 					font-size: 10px;
 					padding-top: 25px;
 				}
-			
+
 			}
 		}
 
@@ -135,32 +137,39 @@ $carousel-bg-color: $shark;
 			.carousel-item-infobox {
 				height: 100%;
 				padding: 10% 0 0 3%;
-	
+
 				.fa-star {
 					color: $candlelight;
 				}
-				h5, h2, p {
+
+				h5,
+				h2,
+				p {
 					color: #fff;
 				}
+
 				h5 {
 					font-size: 18px;
 					font-weight: 700;
 					margin-bottom: 0;
 				}
+
 				h2 {
 					font-size: 64px;
 					font-weight: 700;
 					margin-bottom: 20px;
-	
+
 					span {
 						color: $carousel-item-infobox-span;
 					}
 				}
+
 				p {
 					font-size: 15px;
 					color: $carousel-item-infobox-p-color;
 					font-family: $carousel-item-infobox-p-text;
 				}
+
 				.btn {
 					background-color: rgba(0, 0, 0, 0);
 					border: solid #fff;
@@ -172,13 +181,14 @@ $carousel-bg-color: $shark;
 					width: 154px;
 					height: 50px;
 					margin-top: 25px;
-	
+
 					span {
 						color: $carousel-item-infobox-span;
 					}
-	
+
 					&:hover {
 						background-color: $carousel-item-infobox-span;
+
 						span {
 							color: $white;
 						}
@@ -186,10 +196,78 @@ $carousel-bg-color: $shark;
 				}
 			}
 		}
-
-		
 	}
-
 }
 
 
+
+.content-slider-container {
+
+	.carousel-item {
+		background-size: cover;
+		background-position-y: 50%;
+		height: 410px;
+		border-radius: 5px;
+		
+	}
+
+	.carousel-inner {
+		background-color: $black;
+	}
+
+
+
+	.content-slider-item {
+		
+		
+		&-1 {
+			background-image: url("/images/slider-image-1.jpg");
+			opacity: .3;
+		}
+
+		&-2 {
+			background-image: url("/images/slider-image-2.jpg");
+			opacity: .3;
+		}
+
+		&-3 {
+			background-image: url("/images/slider-image-3.jpg");
+			opacity: .3;
+		}
+	}
+
+	.carousel-control {
+
+		&-prev,
+		&-next {
+			position: absolute;
+			display: inline-block;
+			color: #fff;
+			text-align: center;
+			width: 20px;
+			height: 20px;
+			background-color: $accent-color;
+			border-radius: 3px;
+			top: 20px;
+			opacity: 1;
+			cursor: pointer;
+
+			.fa-chevron-left,
+			.fa-chevron-right {
+				height: auto;
+				width: 5px;
+				padding-bottom: 5px;
+			}
+		}
+
+		&-next {
+			right: 2%;
+		}
+
+		&-prev {
+			left: 92%;
+			background-color: $slider-muted-color-bg;
+		}
+
+	}
+}
