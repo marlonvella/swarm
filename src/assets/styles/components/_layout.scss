@@ -554,7 +554,9 @@ header {
 				}
 			}
 
-			&-facebook, &-twitter, &-rss {
+			&-facebook,
+			&-twitter,
+			&-rss {
 
 				&-row {
 					display: flex;
@@ -593,7 +595,8 @@ header {
 
 				&-info {
 
-					&-title, &-likes {
+					&-title,
+					&-likes {
 						font-family: $base-font-family;
 						font-size: 13px;
 						font-weight: 700;
@@ -620,7 +623,71 @@ header {
 		}
 
 		&-popular-news {
-			height: 592px;
+
+			&-container {
+				padding: 0;
+			}
+
+			&-list {
+
+				&-item {
+					display: inline;
+					align-items: center;
+					border-top: none;
+					border-left: none;
+					border-right: none;
+					padding: 23px;
+					margin: 0;
+
+					&:last-child {
+						border-bottom: none;
+					}
+
+					&-row {
+						padding: 0;
+						margin: 0;
+					}
+
+					&-image {
+						height: 80px;
+						width: 80px;
+						background-color: $global-heading-dark-color;
+					}
+
+					&-info {
+
+						padding-right: 0;
+
+						.list-group-header {
+							font-family: $base-font-family;
+							font-size: 13px;
+							font-weight: 700;
+							text-transform: uppercase;
+							color: $global-heading-dark-color;
+							margin-bottom: .1rem;
+							line-height: 0.8rem;
+						}
+
+						.list-group-date {
+							font-family: $base-font-family;
+							font-size: 10px;
+							font-weight: 400;
+							color: $global-muted-color;
+							margin: 0;
+
+						}
+
+						.banner-highlight {
+
+							&-yellow,
+							&purple {
+								font-size: 8px;
+								padding: 2px 9px;
+							}
+						}
+					}
+				}
+			}
 		}
 
 		&-banner-small {
@@ -632,7 +699,72 @@ header {
 		}
 
 		&-trending-news {
-			height: 1115px;
+
+			.filter-container {
+				padding: 0;
+				text-align: center;
+			}
+
+			&-item {
+				position: relative;
+				display: block;
+				border-top: none !important;
+				border-left: none !important;
+				border-right: none !important;
+				margin: 0;
+
+				&:last-child {
+					border: none;
+				}
+
+				.list-group {
+
+					&-header {
+						font-family: $base-font-family;
+						font-size: 13px;
+						font-weight: 700;
+						text-transform: uppercase;
+						color: $global-heading-dark-color;
+						margin-bottom: .5rem;
+						line-height: 0.9rem;
+					}
+
+					&-date {
+						font-family: $base-font-family;
+						font-size: 10px;
+						font-weight: 400;
+						color: $global-muted-color;
+					}
+
+					&-text {
+						font-family: $heading-font-family;
+						font-size: 14px;
+						font-weight: 400;
+						color: $global-muted-color;
+						margin-bottom: .9rem;
+					}
+				}
+
+				.banner-highlight {
+
+					&-yellow,
+					&-purple,
+					&-orange {
+						font-size: 8px;
+						padding: 2px 9px;
+					}
+				}
+			}
+
+			&-filter {
+				padding: .3rem 0;
+
+				.btn {
+					height: 100%;
+					padding: 0 unset;
+				}
+			}
+
 		}
 
 		&-advertisement {
@@ -641,6 +773,50 @@ header {
 
 		&-newsletter {
 			height: 294px;
+
+			&-form {
+
+				padding: 24px 20px 0 20px;
+
+				&-title {
+					font-family: $base-font-family;
+					font-size: 13px;
+					font-weight: 700;
+					color: $global-heading-dark-color;
+					margin-bottom: 1rem;
+				}
+
+				&-info {
+					font-family: $heading-font-family;
+					font-size: .8rem;
+					font-weight: 400;
+					color: $global-muted-color;
+					margin-bottom: 2rem;
+					padding-right: 0;
+
+					&-email {
+						font-family: $heading-font-family;
+						font-size: 15px;
+						font-weight: 400;
+						color: $global-muted-color;
+						height: 52px;
+						width: 70%;
+						border-top-left-radius: 3px !important;
+						border-bottom-left-radius: 3px !important;
+					}
+
+					&-btn {
+						width: 90px;
+						font-family: $base-font-family;
+						font-size: 12px;
+						font-weight: 700;
+						color: $white;
+						text-transform: uppercase;
+						background-color: $global-muted-color;
+						border: none;
+					}
+				}
+			}
 		}
 
 		&-next-match {
