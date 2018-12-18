@@ -9,6 +9,7 @@ $manatee: #9a9da2;
 $white: #fff;
 $athens-gray: #EDEFF4;
 $amethyst: #9a66ca;
+$pumpkin: #ff7e1f;
 
 
 
@@ -18,13 +19,16 @@ $candlelight: #ffdc11;
 // vars
 $accent-color: $candlelight;
 $variant-color: $amethyst;
+$alter-color: $pumpkin;
 $muted-color: $nevada;
 
 $body-bg-color: $athens-gray !default;
 $heading-color: $oxford-blue !default;
 $body-text-color: $white !default;
-$base-font-family: 'Montserrat', sans-serif;
-$heading-font-family: 'Source Sans Pro', sans-serif;
+$base-font-family: 'Montserrat',
+sans-serif;
+$heading-font-family: 'Source Sans Pro',
+sans-serif;
 $base-font-size: 16px !default;
 $font-size-xxs: 0.65em !default;
 $font-size-xs: 0.75em !default;
@@ -33,4 +37,3 @@ $font-size-m: 1em !default;
 $font-size-l: 2.25em !default;
 $font-size-xl: 3em !default;
 $font-size-xxl: 3.5em !default;
-

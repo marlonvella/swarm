@@ -181,7 +181,7 @@ header {
 		&-card-small-container,
 		&-card-horizontal-container,
 		&-list-group,
-		&-banner,
+		&-banner-container,
 		&-playoffs-standings,
 		&-social-facebook,
 		&-social-twitter,
@@ -263,8 +263,10 @@ header {
 			height: 410px;
 		}
 
-		&-banner {
+		&-banner-container {
 			height: 410px;
+			background-image: url("/images/banner-image-1.jpg");
+			background-size: 100%;
 		}
 
 		&-card {
@@ -300,6 +302,7 @@ header {
 					height: 370px;
 
 
+
 					.card-floating-icon {
 						left: 20px;
 						top: 20px;
@@ -320,6 +323,15 @@ header {
 					.card-body {
 						min-height: 313px;
 					}
+
+					.card-img-container {
+						height: 370px;
+						border-top-left-radius: 5px;
+						border-bottom-left-radius: 5px;
+						border-top-right-radius: 0px;
+					}
+
+
 				}
 			}
 		}
@@ -327,19 +339,284 @@ header {
 		&-card-container,
 		&-list-group {
 			height: 620px;
+
+			&-ul {
+				li {
+					padding: 1.2rem 1.45rem 0 1.45rem;
+				}
+			}
+
+			.list-group {
+
+
+
+				&-item {
+					border-top: none !important;
+					border-left: none !important;
+					border-right: none !important;
+					margin: 0;
+
+					&:last-child {
+						border: none;
+					}
+				}
+
+
+				&-header {
+					font-size: 16px;
+					color: $global-heading-dark-color;
+					font-family: $base-font-family;
+					text-transform: uppercase;
+					font-weight: 700;
+					margin-bottom: 0.6rem;
+					line-height: 1.2rem;
+				}
+
+				&-date {
+					font-size: 10px;
+					color: $global-muted-color;
+					font-family: $base-font-family;
+					text-transform: uppercase;
+					font-weight: 400;
+					margin-bottom: .9rem;
+				}
+
+				&-text {
+					font-size: 14px;
+					color: $global-muted-color;
+					font-family: $heading-font-family;
+					font-weight: 400;
+					line-height: 1.4rem;
+					margin-bottom: 2rem;
+				}
+
+
+			}
 		}
 
 		// RIGHT CONTENT
 
-		&-playoffs-standings {
-			height: 569px;
-			padding: 0;
+		&-playoffs {
+			&-standings {
+				padding: 0;
+			}
+
+			&-list {
+				&-container {
+					padding: 0;
+				}
+
+				&-item {
+					border-top: none;
+					border-left: none;
+					border-right: none;
+					padding: 13px 0 13px 5px;
+					margin: 0;
+
+
+					&:last-child {
+						border-bottom: none;
+					}
+
+					&-row {
+						padding: 0;
+						display: flex;
+						align-items: center;
+						margin: 0;
+					}
+
+					&-team,
+					&-score {
+
+						font-family: $base-font-family;
+						font-size: 11px;
+						font-weight: 400;
+						text-transform: uppercase;
+						color: $global-heading-dark-color;
+
+						p {
+							margin: 0;
+							text-align: center;
+
+						}
+
+						&-title {
+							font-family: $base-font-family;
+							font-size: 11px;
+							font-weight: 700;
+							text-transform: uppercase;
+							color: $global-heading-dark-color;
+
+							p {
+								margin: 0;
+								text-align: center;
+							}
+						}
+					}
+
+					&-team {
+						&-title {
+
+							padding-right: 0;
+
+							p {
+								text-align: left;
+								line-height: .8rem;
+							}
+						}
+
+						&-info {
+
+							padding: 0;
+							display: inline;
+							align-items: center;
+							margin: 0;
+
+							&-row {
+								padding: 0;
+								display: flex;
+								align-items: center;
+								margin: 0;
+							}
+
+						}
+
+						&-number {
+							font-family: $base-font-family;
+							font-size: 11px;
+							font-weight: 400;
+							color: $global-muted-color;
+							padding-left: 0;
+
+							span {
+								color: $global-heading-dark-color;
+							}
+						}
+
+						&-logo {
+							height: 30px;
+							width: 30px;
+							padding-left: 5px;
+							padding-right: 39px;
+						}
+
+						&-name {
+							font-family: $base-font-family;
+							font-size: 12px;
+							font-weight: 400;
+							color: $global-heading-dark-color;
+							text-transform: none;
+						}
+
+						&-institute {
+							font-family: $base-font-family;
+							font-size: 9px;
+							font-weight: 400;
+							color: $global-muted-color;
+							text-transform: none;
+						}
+
+					}
+
+				}
+			}
 		}
 
 		&-social-facebook,
 		&-social-twitter,
 		&-social-rss {
 			height: 66px;
+		}
+
+		&-social {
+
+			&-facebook {
+				background-color: #4d6baa;
+
+				&-icon {
+					background-color: #43609c;
+				}
+			}
+
+			&-twitter {
+				background-color: #3fcef2;
+
+				&-icon {
+					background-color: #38c2e5;
+				}
+			}
+
+			&-rss {
+				background-color: #ffcc00;
+
+				&-icon {
+					background-color: #ffbf13;
+				}
+			}
+
+			&-facebook, &-twitter, &-rss {
+
+				&-row {
+					display: flex;
+					align-items: center;
+					margin: 0;
+				}
+
+				&-icon,
+				&-add {
+					text-align: center;
+				}
+
+				&-icon {
+					height: 66px;
+					border-top-left-radius: 5px;
+					border-bottom-left-radius: 5px;
+					padding-top: 21px;
+				}
+
+				&-add {
+
+					&-wrapper {
+						height: 25px;
+						width: 25px;
+						border: 2px solid $white;
+						border-radius: 50%;
+						text-align: center;
+					}
+
+					.fa-plus {
+						height: auto;
+						width: 10px;
+						padding: 0px 0 3px 2px;
+					}
+				}
+
+				&-info {
+
+					&-title, &-likes {
+						font-family: $base-font-family;
+						font-size: 13px;
+						font-weight: 700;
+						color: $white;
+						text-transform: uppercase;
+					}
+
+					&-likes {
+						font-size: 10px;
+					}
+
+					&-container {
+						padding: 0;
+						display: flex;
+						align-items: center;
+						margin: 0;
+					}
+
+					p {
+						margin: 0;
+					}
+				}
+			}
 		}
 
 		&-popular-news {
@@ -375,29 +652,33 @@ header {
 .card {
 	background: none;
 	border: none;
-	border-radius: 0%;
 
 	&-row {
 		margin: 0;
 	}
 
 	&-img {
+
+
+		&-container {
+			height: 270px;
+			padding: 0;
+			background: $card-heading-color;
+			overflow: hidden;
+			border-top-right-radius: 5px;
+			position: relative;
+		}
+
 		&-top {
 			height: 270px;
 			background: $card-heading-color;
-		}
-
-		&-container {
-			height: 370px;
-			padding: 0;
-			background: $card-heading-color;
-			border-top-left-radius: 5px;
-			border-bottom-left-radius: 5px;
+			width: auto;
+			position: absolute;
 		}
 
 		&-left {
 			height: 370px;
-			width: 100%;
+			width: auto;
 		}
 	}
 
@@ -477,6 +758,7 @@ header {
 		display: flex;
 		align-items: center;
 		height: 100%;
+		border-bottom-right-radius: 5px;
 
 		p {
 			font-family: $base-font-family;
@@ -519,8 +801,6 @@ header {
 		}
 	}
 
-
-
 }
 
 .global-variant-color {
@@ -554,6 +834,7 @@ header {
 	}
 
 }
+
 
 
 /**********************************************
@@ -744,11 +1025,14 @@ header {
 }
 
 .content,
-.footer {
+.footer,
+.slider,
+.banner {
 	&-highlight {
 
 		&-purple,
-		&-yellow {
+		&-yellow,
+		&-orange {
 			font-size: 8px;
 			border-radius: 3px;
 			display: inline-block;
@@ -765,5 +1049,80 @@ header {
 			background-color: $accent-color;
 		}
 
+		&-orange {
+			background-color: $alter-color;
+		}
+
+	}
+}
+
+.banner {
+
+	&-details-container {
+		padding-top: 55px;
+	}
+
+	&-highlight {
+
+		&-yellow,
+		&-orange {
+			font-size: 10px;
+			padding: 3px 10px;
+		}
+
+		&-yellow {
+			background-color: $accent-color;
+		}
+
+	}
+
+	&-header {
+		font-size: 30px;
+		color: $white;
+		font-family: $base-font-family;
+		text-transform: uppercase;
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+		line-height: 1.9rem;
+
+		span {
+			color: $accent-color;
+		}
+	}
+
+	&-date {
+		font-size: 11px;
+		color: $card-text-muted-color
+	}
+
+	&-text {
+		font-family: $heading-font-family;
+		font-size: 15px;
+		color: $card-text-muted-color
+	}
+
+	&-btn {
+		background-color: rgba(0, 0, 0, 0);
+		border: solid #fff;
+		border-radius: 0;
+		text-transform: uppercase;
+		font-size: 11px;
+		font-weight: 700;
+		color: #fff;
+		width: 154px;
+		height: 50px;
+		margin-top: 25px;
+
+		span {
+			color: $carousel-item-infobox-span;
+		}
+
+		&:hover {
+			background-color: $carousel-item-infobox-span;
+
+			span {
+				color: $white;
+			}
+		}
 	}
 }
