@@ -691,7 +691,119 @@ header {
 		}
 
 		&-banner-small {
-			height: 198px;
+
+			&-bg {
+				background-size: cover;
+				background-image: url("/images/player-bg.png");
+				height: 200px;
+				width: 100%;
+				border-radius: 5px;
+			}
+
+			&-uniform {
+				position: absolute;
+				top: 1px;
+				z-index: 0;
+				padding-left: 1px;
+
+				img {
+					border-bottom-left-radius: 5px;
+				}
+			}
+
+			&-info {
+
+				display: flex;
+				padding: 0 0 0 12rem;
+				text-align: center;
+
+				&-data {
+					padding: 0 .5rem;
+				}
+
+				&-row {
+					display: flex;
+					position: absolute;
+					top: 0;
+					z-index: 1;
+				}
+
+				&-header {
+					display: flex;
+					margin: 1.5rem 1rem 1rem 9rem;
+					padding: 0;
+
+					.text-large {
+						font-size: 56px;
+						line-height: 2.7rem;
+						padding-right: 5px;
+					}
+
+					h3 {
+						font-family: $base-font-family;
+						font-size: 24px;
+						font-weight: 700;
+						text-transform: uppercase;
+						color: $white;
+						line-height: 1.4rem;
+
+						.yellow {
+							color: $accent-color;
+						}
+					}
+				}
+
+				&-title {
+					font-family: $base-font-family;
+					font-size: 10px;
+					font-weight: 700;
+					text-transform: uppercase;
+					color: $white;
+					margin-bottom: 15px;
+				}
+
+				&-score {
+					font-family: $base-font-family;
+					font-size: 18px;
+					font-weight: 700;
+					text-transform: uppercase;
+					color: $white;
+					margin-bottom: 0px;
+					line-height: 0.5rem;
+				}
+
+				&-avg {
+					font-family: $base-font-family;
+					font-size: 8px;
+					font-weight: 700;
+					text-transform: uppercase;
+					color: $global-muted-color;
+					line-height: 1.4rem;
+				}
+
+				&-featured-player {
+
+					display: inline-flex;
+					padding: .7rem 0 0 15.8rem;
+
+					h3,
+					.fa-star {
+						font-family: $base-font-family;
+						font-size: 9px;
+						font-weight: 700;
+						text-transform: uppercase;
+						color: $white;
+					}
+
+					h3 {
+						padding-left: 5px;
+					}
+
+					.fa-star {
+						color: $accent-color;
+					}
+				}
+			}
 		}
 
 		&-results {
@@ -768,18 +880,16 @@ header {
 		}
 
 		&-advertisement {
-			
+
 			&-advert {
 				padding: 29px;
-				
-				
-				
+
 				a {
 					img {
 						height: 250px;
 						width: 300px;
 					}
-				}				
+				}
 			}
 		}
 
@@ -833,6 +943,36 @@ header {
 
 		&-next-match {
 			height: 542px;
+
+			&-panel {
+				padding: 0;
+
+				&-list {
+					&-group {}
+
+					&-item, &-item-clock {
+						border-top: none !important;
+						border-left: none !important;
+						border-right: none !important;
+						margin: 0;
+
+						h1 {
+							font-family: $base-font-family;
+							font-size: 11px;
+							font-weight: 700;
+							text-transform: uppercase;
+							color: $global-heading-dark-color;
+							margin: 0;
+							text-align: center;
+						}
+
+						&-clock {
+							margin: 0 auto !important;
+						}
+					}
+				}
+			}
+
 		}
 	}
 }

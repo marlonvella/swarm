@@ -1253,7 +1253,39 @@
 					</div>
 					<!-- Popular News End -->
 					<!-- Small Banner -->
-					<div class="col-lg-12 content-banner-small"></div>
+					<div class="col-lg-12 content-banner-small">
+						<div class="content-banner-small-bg"></div>
+						<div class="row content-banner-small-info-row">
+							<div class="col-6 content-banner-small-info-header">
+								<h3 class="text-large">38</h3>
+								<h3>James<span class="yellow"><br>Girobilli</span></h3>
+							</div>
+							<div class="content-banner-small-info">
+								<div class="col-4 content-banner-small-info-data">
+									<p class="content-banner-small-info-title">Assists</p>
+									<p class="content-banner-small-info-score">16.9</p>
+									<p class="content-banner-small-info-avg">avg</p>
+								</div>
+								<div class="col-4 content-banner-small-info-data">
+									<p class="content-banner-small-info-title">Steals</p>
+									<p class="content-banner-small-info-score">7.2</p>
+									<p class="content-banner-small-info-avg">avg</p>
+								</div>
+								<div class="col-4 content-banner-small-info-data">
+									<p class="content-banner-small-info-title">Blocks</p>
+									<p class="content-banner-small-info-score">12.4</p>
+									<p class="content-banner-small-info-avg">avg</p>
+								</div>
+							</div>
+							<div class="col-12 content-banner-small-info-featured-player">
+								<i class="fas fa-star"></i>
+								<h3>Featured Player</h3>
+							</div>
+						</div>
+						<div class="content-banner-small-uniform">
+							<img src="/images/player-uniform.png" alt="">
+						</div>
+					</div>
 					<!-- Small Banner End -->
 					<!-- Last Game Results -->
 					<div class="col-12 content-results">
@@ -1378,7 +1410,7 @@
 							</div>
 						</div>
 						<div class="col-12 content-advertisement-advert">
-							<a href=""><img src="/images/ad-banner.jpg" alt="advert"></a>
+							<a href=""><img src="/images/swarm-ad.png" alt="advert"></a>
 						</div>
 					</div>
 					<!-- Advertisement End -->
@@ -1400,8 +1432,8 @@
 									<p class="content-newsletter-form-info">
 										Receive the latest news from the team: game reminders, new acquisitions and professional match results.
 									</p>
-									<input type="email" class="form-control content-newsletter-form-info-email" placeholder="Your email address..." aria-label="Recipient's username"
-									 aria-describedby="button-addon2" required>
+									<input type="email" class="form-control content-newsletter-form-info-email" placeholder="Your email address..."
+									 aria-label="Recipient's username" aria-describedby="button-addon2" required>
 									<div class="input-group-append">
 										<button class="btn btn-primary content-newsletter-form-info-btn" type="button" id="button-addon2">Send</button>
 									</div>
@@ -1419,10 +1451,38 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-12 content-next-match-panel"></div>
-						<div class="col-12 content-next-match-counter-container">
-							<div class="col-12 content-next-match-counter-title"></div>
-							<div class="col-12 content-next-match-counter-timer"></div>
+						<div class="col-12 content-next-match-panel">
+							<ul class="list-group content-next-match-panel-list-group">
+								<li class="list-group-item content-next-match-panel-list-item">Cras justo odio</li>
+								<li class="list-group-item content-next-match-panel-list-item">
+									<h1>Game Countdown</h1>
+								</li>
+								<li class="list-group-item content-next-match-panel-list-item-clock">
+
+									<div id="clockdiv">
+										<div>
+											<span class="days"></span>
+											<div class="smalltext">Days</div>
+										</div>
+										<div class="colon">:</div>
+										<div>
+											<span class="hours"></span>
+											<div class="smalltext">Hours</div>
+										</div>
+										<div class="colon">:</div>
+										<div>
+											<span class="minutes"></span>
+											<div class="smalltext">Mins</div>
+										</div>
+										<div class="colon">:</div>
+										<div>
+											<span class="seconds"></span>
+											<div class="smalltext">Secs</div>
+										</div>
+									</div>
+
+								</li>
+							</ul>
 						</div>
 					</div>
 					<!-- Next Match End -->
