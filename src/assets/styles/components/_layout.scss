@@ -768,7 +768,19 @@ header {
 		}
 
 		&-advertisement {
-			height: 400px;
+			
+			&-advert {
+				padding: 29px;
+				
+				
+				
+				a {
+					img {
+						height: 250px;
+						width: 300px;
+					}
+				}				
+			}
 		}
 
 		&-newsletter {
