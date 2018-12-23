@@ -183,8 +183,9 @@
 						</div>
 						<div class="sidebar-burger-button text-center">
 							<a class="nav-link burger-icon" href="#">
-								<span><i class="fas fa-bars fa-2x"></i></span>
+								<span onclick="openNav()"><i class="fas fa-bars fa-2x"></i></span>
 							</a>
+
 						</div>
 					</div>
 				</div>
@@ -192,6 +193,8 @@
 		</div>
 	</header>
 	<!-- Bottom Header End -->
+
+
 	<!-- Header End -->
 
 	<!-- Carousel Wrapper -->
@@ -1414,6 +1417,62 @@
 								</li>
 								<li class="list-group-item content-results-panel-list-item-statistics-data">
 									<div class="row content-results-panel-list-item-statistics-data-row">
+										<div class="col-12 content-results-panel-list-item-statistics-data-container">
+											<div class="col-2 data-bar-score">
+												<p>22</p>
+												<span class="dark">
+													<p>35</p>
+												</span>
+												<p>14</p>
+											</div>
+											<div class="col-8 p-0">
+												<span class="bold text-center">
+													<p>Assists</p>
+												</span>
+												<div class="col-12 data-bar-assists">
+													<div class="col-6 data-bar-assists-left">
+														<div class="data-bar-assists-left-progress"></div>
+													</div>
+													<div class="col-6 data-bar-assists-right">
+														<div class="data-bar-assists-right-progress"></div>
+													</div>
+												</div>
+
+												<span class="bold text-center">
+													<p>Rebounds</p>
+												</span>
+												<div class="col-12 data-bar-rebounds">
+													<div class="col-6 data-bar-rebounds-left">
+														<div class="data-bar-rebounds-left-progress"></div>
+													</div>
+													<div class="col-6 data-bar-rebounds-right">
+														<div class="data-bar-rebounds-right-progress"></div>
+													</div>
+												</div>
+												<span class="bold text-center">
+													<p>Steals</p>
+												</span>
+												<div class="col-12 data-bar-steals">
+													<div class="col-6 data-bar-steals-left">
+														<div class="data-bar-steals-left-progress"></div>
+													</div>
+													<div class="col-6 data-bar-steals-right">
+														<div class="data-bar-steals-right-progress"></div>
+													</div>
+												</div>
+											</div>
+											<div class="col-2 data-bar-score">
+												<span class="dark">
+													<p>36</p>
+												</span>
+
+												<p>18</p>
+												<span class="dark">
+													<p>24</p>
+												</span>
+
+											</div>
+										</div>
 									</div>
 								</li>
 								<li class="list-group-item content-results-panel-list-item-mvp">
@@ -1429,6 +1488,51 @@
 								</li>
 								<li class="list-group-item content-results-panel-list-item-mvp-data">
 									<div class="row content-results-panel-list-item-mvp-data-row">
+										<div class="col-6 profile-container">
+											<img class="profile-pic" src="" alt="">
+											<p class="profile-pic-name">Mark Stevens</p>
+											<p class="profile-pic-title">1st Power Forward</p>
+										</div>
+										<div class="col-6">
+											<div class="row progress-bar-row">
+												<div class="progress yellow">
+													<span class="progress-left">
+														<span class="progress-bar first"></span>
+													</span>
+													<span class="progress-right">
+														<span class="progress-bar"></span>
+													</span>
+													<div class="progress-value">
+														<p class="dark">36</p>
+														<p>Pts</p>
+													</div>
+												</div>
+												<div class="progress yellow">
+													<span class="progress-left">
+														<span class="progress-bar second"></span>
+													</span>
+													<span class="progress-right">
+														<span class="progress-bar"></span>
+													</span>
+													<div class="progress-value">
+														<p class="dark">18</p>
+														<p>Reb</p>
+													</div>
+												</div>
+												<div class="progress yellow">
+													<span class="progress-left">
+														<span class="progress-bar third"></span>
+													</span>
+													<span class="progress-right">
+														<span class="progress-bar"></span>
+													</span>
+													<div class="progress-value">
+														<p class="dark">29</p>
+														<p>Ast</p>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</li>
 							</ul>
@@ -1774,6 +1878,18 @@
 		</div>
 	</footer>
 	<!-- Footer End -->
+
+	<!-- Sidebar -->
+	<div id="mySidenav-container">
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#">About</a>
+			<a href="#">Services</a>
+			<a href="#">Clients</a>
+			<a href="#">Contact</a>
+		</div>
+	</div>
+	<!-- Sidebar End -->
 </body>
 
 </html>
