@@ -118,9 +118,10 @@
 #mySidenav-container {
 	width: 0;
 	height: 100% !important;
-	position: absolute;
-	background-color: rgba($color: #000000, $alpha: 0.6);
+	position: fixed;
+	background-color: rgba(0,0,0,.8);
 	z-index: 5;
+	top: 0;
 }
 
 /* The navigation menu links */

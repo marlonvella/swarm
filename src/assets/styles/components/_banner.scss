@@ -20,6 +20,7 @@ $slider-muted-color-bg: $manatee;
 		bottom: 0;
 		background-color: $carousel-bg-color;
 		z-index: 0;
+		overflow: hidden;
 
 		li {
 			width: 500px;

@@ -264,7 +264,7 @@ header {
 		}
 
 		&-banner-container {
-			height: 410px;
+			min-height: 410px;
 			background-image: url("/images/banner-image-1.jpg");
 			background-size: 100%;
 		}
@@ -299,7 +299,7 @@ header {
 				}
 
 				&-container {
-					height: 370px;
+					min-height: 370px;
 
 
 
@@ -824,7 +824,7 @@ header {
 						&-statistics-data,
 						&-mvp,
 						&-mvp-data {
-							
+
 
 							&-row {
 								padding: 0 15px;
@@ -857,7 +857,7 @@ header {
 									padding: 0;
 									align-items: center;
 									height: 100%;
-									
+
 
 									.progress-bar-row {
 										padding: 0;
@@ -1595,8 +1595,8 @@ header {
 	}
 
 	&-container {
-		height: 470px;
 		padding-top: 80px;
+		margin-bottom: 4rem;
 	}
 
 	&-content {
