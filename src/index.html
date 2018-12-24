@@ -183,7 +183,7 @@
 						</div>
 						<div class="sidebar-burger-button text-center">
 							<a class="nav-link burger-icon" href="#">
-								<span onclick="openNav()"><i class="fas fa-bars fa-2x"></i></span>
+								<span id="btn-open" onclick="openNav()"><i class="fas fa-bars fa-2x"></i></span>
 							</a>
 
 						</div>
@@ -1882,11 +1882,67 @@
 	<!-- Sidebar -->
 	<div id="mySidenav-container">
 		<div id="mySidenav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<a href="#">About</a>
-			<a href="#">Services</a>
-			<a href="#">Clients</a>
-			<a href="#">Contact</a>
+			<a href="javascript:void(0)" id="btn-close" class="closebtn" onclick="closeNav()"><i class="fas fa-long-arrow-alt-left"></i></a>
+			<div class="row sidenav-row">
+				<div class="col-12 sidenav-img">
+					<img src="images/nextmatch-swarm-logo.png" alt="Swarm Logo">
+				</div>
+				<div class="col-12 p-0 content-card-horizontal-body">
+					<div class="card-body">
+						<p class="card-img-highlight-horizontal content-highlight-yellow text-uppercase">
+							The Team
+						</p>
+						<h5 class="card-title-horizontal">THE NEW ECO FRIENDLY STADIUM WON A LEAFY AWARD IN 2016</h5>
+						<p class="card-date">August 23rd, 2015</p>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt
+							ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.</p>
+						<div class="col-sm-12 card-profile-container ">
+							<img class="card-profile-pic" src="" alt="">
+							<p class="card-profile-name">JESSICA HOOPS</p>
+							<p><span><i class="far fa-heart"></i> </span> 530</p>
+							<p><i class="far fa-comment"></i> 18</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 p-0 content-card-horizontal-body">
+					<div class="card-body">
+						<p class="card-img-highlight-horizontal content-highlight-purple text-uppercase">
+							Injuries
+						</p>
+						<h5 class="card-title-horizontal">MARK JHONSON HAS A TIBIA FRACTURE AND IS GONNA BE OUT</h5>
+						<p class="card-date">August 23rd, 2015</p>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisi nel elit, sed do eiusmod tempor incididunt
+							ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud en derum sum laborem.</p>
+						<div class="col-sm-12 card-profile-container ">
+							<img class="card-profile-pic" src="" alt="">
+							<p class="card-profile-name">JESSICA HOOPS</p>
+							<p><i class="far fa-heart"></i> 530</p>
+							<p><i class="far fa-comment"></i> 18</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 popular-tags-container">
+					<h5 class="popular-tags-title">Popular Tags</h5>
+					<div class="col-12 popular-tags">
+						<button type="button" class="btn btn-tag">Playoffs</button>
+						<button type="button" class="btn btn-tag active">Swarm</button>
+						<button type="button" class="btn btn-tag">Champions</button>
+						<button type="button" class="btn btn-tag">Incorporations</button>
+						<button type="button" class="btn btn-tag">Uniforms</button>
+						<button type="button" class="btn btn-tag">Injuries</button>
+						<button type="button" class="btn btn-tag">Professional</button>
+						<button type="button" class="btn btn-tag">Coach</button>
+						<button type="button" class="btn btn-tag">Stadium</button>
+						<button type="button" class="btn btn-tag">Players</button>
+						<button type="button" class="btn btn-tag">Women Division</button>
+						<button type="button" class="btn btn-tag">Awards</button>
+					</div>
+				</div>
+				<div class="col-12 p-0 m-0 content-advertisement-advert">
+					<a href=""><img src="/images/swarm-ad.png" alt="advert"></a>
+				</div>
+			</div>
+
 		</div>
 	</div>
 	<!-- Sidebar End -->

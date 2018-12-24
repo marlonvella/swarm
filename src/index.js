@@ -54,21 +54,27 @@ var deadline = new Date(Date.parse(new Date()) + 34 * 24 * 60 * 60 * 1000);
 initializeClock('clockdiv', deadline);
 
 
+
+
+
 //********************************
 // Sidebar
 
-document.addEventListener("click", openNav);
-document.addEventListener("click", closeNav);
+document.addEventListener("DOMContentLoaded", function (event) {
 
 
-/* Set the width of the side navigation to 250px */
-function openNav() {
-  document.getElementById("mySidenav-container").style.width = "100%";
-  document.getElementById("mySidenav").style.width = "380px";
-}
+	function openNav() {
+		document.getElementById("mySidenav-container").style.width = "100%";
+		document.getElementById("mySidenav").style.width = "380px";
+	}
 
-// /* Set the width of the side navigation to 0 */
-function closeNav() {
-  document.getElementById("mySidenav-container").style.width = "0";
-  document.getElementById("mySidenav").style.width = "0";
-}
+	function closeNav() {
+		document.getElementById("mySidenav-container").style.width = "0";
+		document.getElementById("mySidenav").style.width = "0";
+	}
+
+	
+	document.getElementById("btn-open").addEventListener("click", openNav);
+	document.getElementById("btn-close").addEventListener("click", closeNav);
+
+});

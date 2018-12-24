@@ -1,52 +1,164 @@
+@import "../vars";
+
 /* The side navigation menu */
-.sidenav  {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  right: 0;
-  background-color: #fff; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background-color: #fff;
+	overflow-x: hidden;
+	transition: 0.5s;
+
+	&-row {
+		display: block;
+		padding: 15px;
+		margin: 15px;
+
+		.popular-tags {
+			padding: 0;
+
+			&-container {
+				padding: 20px;
+			}
+
+			&-title {
+				font-size: 16px;
+				color: $heading-color;
+				font-weight: 700;
+				font-family: $base-font-family;
+				text-transform: uppercase;
+				margin: 1rem 0;
+			}
+
+			.btn-tag {
+				font-size: 9px;
+				color: $heading-color;
+				font-weight: 700;
+				font-family: $base-font-family;
+				text-transform: uppercase;
+				background-color: #fff;
+				border: 1px solid #e4e7ed;
+				border-radius: 3px;
+				padding: 6px 9px;
+				margin: 4px 2px !important;
+
+      }
+      .active {
+        padding: 5px 20px !important;
+        background-color: $accent-color;
+        border: none;
+        color: $white;
+      }
+
+		}
+  }
+  
+  .content-advertisement-advert {
+
+    a {
+      padding: 23px !important;
+
+      img {
+        width: 257px!important;
+        height: auto;
+      }
+    }
+
+  }
+
+	&-img {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	.card {
+		border: none;
+
+		&-title-horizontal {
+			font-size: 20px !important;
+		}
+
+		&-date {
+			font-size: 9px !important;
+		}
+
+		&-text {
+			font-size: 14px !important;
+			line-height: 1.5rem;
+		}
+
+		&-profile {
+			&-container {
+				display: flex;
+
+				p {
+					font-size: 9px;
+					color: #9a9da2;
+					font-weight: 400;
+					font-family: $base-font-family;
+					margin: 0;
+					padding: 0 .5rem;
+				}
+
+				span {
+					color: #f1365e;
+				}
+			}
+
+			&-name {
+				padding: 0 4rem 0 1rem !important
+			}
+		}
+	}
 }
 
 #mySidenav-container {
-  width: 0;
-  height: 100% !important;
-  position: absolute;
-  background-color:rgba($color: #000000, $alpha: 0.6);
-  z-index: 5;
+	width: 0;
+	height: 100% !important;
+	position: absolute;
+	background-color: rgba($color: #000000, $alpha: 0.6);
+	z-index: 5;
 }
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #f1f1f1;
+	color: #f1f1f1;
 }
 
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+	position: absolute;
+	top: 25px;
+	right: 42px;
+	font-size: 16px;
+	margin-left: 50px;
+	color: #31404b;
+	z-index: 1;
 }
+
+
 
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+	.sidenav {
+		padding-top: 15px;
+	}
+
+	.sidenav a {
+		font-size: 18px;
+	}
 }
