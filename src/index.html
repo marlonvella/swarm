@@ -15,12 +15,12 @@
 	<!-- Navbar -->
 	<nav class="navbar navbar-expand-lg">
 		<div class="container">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+			<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
 			 aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavDropdown">
-				<ul class="navbar-nav ml-auto">
+			</button> -->
+			<!-- <div class="collapse navbar-collapse" id="navbarNavDropdown"> -->
+				<ul class="navbar-nav ml-auto top-navbar">
 					<li class="nav-item">
 						<a class="nav-link disabled" href="#">Logout</a>
 					</li>
@@ -57,7 +57,7 @@
 						<a class="nav-link pr-0" href="#">Your Account<span class="sr-only">(current)</span></a>
 					</li>
 				</ul>
-			</div>
+			<!-- </div> -->
 		</div>
 	</nav>
 	<!-- Navbar End -->
@@ -69,9 +69,9 @@
 				<div class="logo col-sm-2">
 					<img src="/images/logo.png" alt="Swarm Logo" />
 				</div>
-				<div class="col-lg-10 pl-0">
+				<div class="col-lg-10 search-container-wrapper">
 					<div class="search-container row d-flex align-items-center">
-						<div class="col-md-4 offset-1 p-0">
+						<div class="col-lg-4 col-12 offset-1 p-0 search-bar-container">
 							<div class="input-group search-bar">
 								<input type="text" class="form-control bg-transparent border-0 pl-4" placeholder="Enter your search here..." />
 								<div class="input-group-append">
@@ -81,39 +81,38 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-2 ml-auto">
-							<div class="row">
-								<div class="col-sm-2 p-0">
+						<div class="col-lg-2 col-12 ml-auto joinUs-row-container">
+							<div class="row joinUs-row">
+								<div class="col-lg-2 col-2 p-0">
 									<img src="/images/tshirt.png" alt="T-Shirt" />
 								</div>
-								<div class="col-sm-10 pr-0 pl-2">
+								<div class="col-lg-10 col-10 pr-0 pl-2">
 									<p class="m-0">
 										Join Our Team! <br /><span class="text-muted">tryouts@swarm.com</span>
 									</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-2 ml-auto">
-							<div class="row">
-								<div class="col-sm-2 p-0">
+						<div class="col-lg-2 col-12 ml-auto contactUs-row-container">
+							<div class="row contactUs-row">
+								<div class="col-lg-2 col-2 p-0">
 									<img src="/images/basketball.png" alt="Basketball" />
 								</div>
-								<div class="col-sm-10 pr-0 pl-3">
+								<div class="col-lg-10 col-10 pr-0 pl-3">
 									<p class="m-0">
 										Contact Us <br /><span class="text-muted">info@swarm.com</span>
 									</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-2 ml-auto">
-							<div class="row">
-								<div class="col-sm-1 p-0">
+						<div class="col-lg-2 col-12 ml-auto yourBag-row-container">
+							<div class="row yourBag-row">
+								<div class="col-lg-1 col-2 p-0">
 									<img src="/images/bag.png" alt="Bag" class="d-inline-block" />
 								</div>
-								<div class="col-sm-10 pr-0 pl-4 float-right">
+								<div class="col-lg-10 col-10 pr-0 pl-4 float-right yourBag">
 									<p class="m-0">
-										Your Bag (8 items)
-										<i class="fa fa-angle-down"></i>
+										Your Bag (8 items)<i class="fa fa-angle-down"></i>
 										<br /><span class="balance">$256.30</span>
 									</p>
 								</div>
@@ -576,7 +575,7 @@
 					<!-- Banner -->
 					<div class="col-lg-12 col-12 content-banner-container">
 						<div class="slider-overlay"></div>
-						<div class="col-7 offset-5 banner-details-container">
+						<div class="col-lg-7 col-12 offset-5 banner-details-container">
 							<p class="banner-highlight-yellow text-uppercase">
 								The Team
 							</p>

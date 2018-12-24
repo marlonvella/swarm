@@ -39,6 +39,10 @@ body {
 	font-size: 9px;
 	font-weight: 700;
 	text-transform: uppercase;
+
+	&-nav {
+		flex-direction: row;
+	}
 }
 
 .menu-divider {
@@ -55,10 +59,14 @@ header {
 }
 
 .search-container {
-	height: 90px;
+	min-height: 90px;
 	font-size: 9px;
 	font-weight: 700;
 	text-transform: uppercase;
+
+	&-wrapper {
+		padding-left: 0;
+	}
 
 	.form-control {
 		font-size: 11px;
