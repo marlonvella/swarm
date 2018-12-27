@@ -83,13 +83,6 @@ header {
 	border-radius: 25px
 }
 
-// #search-row {
-// 	position: relative;
-// 	top: 50%;
-// 	margin-top: -18px;
-// }
-
-
 .main-menu-container {
 	font-size: 12px;
 	font-weight: 700;
@@ -149,6 +142,7 @@ header {
 
 .sidebar-burger-button {
 	width: 65px;
+	height: 62px;
 	background-color: $nav-sidebar-burger-btn-bg-color;
 	color: $nav-sidebar-burger-btn-color;
 	z-index: 4;
@@ -848,7 +842,7 @@ header {
 
 
 							&-container-header {
-								background-color: #f5f7f9;
+								background-color: $athens-gray-2;
 							}
 
 							&-title,
@@ -943,7 +937,7 @@ header {
 											width: 100%;
 											height: 6px;
 											padding: 0 !important;
-											background-color: #f5f7f9;
+											background-color: $athens-gray-2;
 											border-radius: 10px;
 											position: relative;
 											display: flex;
@@ -1393,7 +1387,7 @@ header {
 
 						&-countdown {
 							padding: .8rem 0;
-							background-color: #f5f7f9;
+							background-color: $athens-gray-2;
 						}
 					}
 				}
@@ -1728,7 +1722,7 @@ header {
 		&-image {
 			height: 75px;
 			width: 75px;
-			background-color: darkgray;
+			background-color: $manatee;
 		}
 
 		&-image-container {

@@ -104,7 +104,7 @@ $slider-muted-color-bg: $manatee;
 				margin-top: 120px;
 				align-items: center;
 				justify-content: center;
-				color: #fff;
+				color: $white;
 				text-align: center;
 				width: 36px;
 				height: 36px;
@@ -149,7 +149,7 @@ $slider-muted-color-bg: $manatee;
 				h5,
 				h2,
 				p {
-					color: #fff;
+					color: $white;
 				}
 
 				h5 {
@@ -176,12 +176,12 @@ $slider-muted-color-bg: $manatee;
 
 				.btn {
 					background-color: rgba(0, 0, 0, 0);
-					border: solid #fff;
+					border: solid $white;
 					border-radius: 0;
 					text-transform: uppercase;
 					font-size: 11px;
 					font-weight: 700;
-					color: #fff;
+					color: $white;
 					width: 154px;
 					height: 50px;
 					margin-top: 25px;
@@ -244,7 +244,7 @@ $slider-muted-color-bg: $manatee;
 		&-next {
 			position: absolute;
 			display: inline-block;
-			color: #fff;
+			color: $white;
 			text-align: center;
 			width: 20px;
 			height: 20px;

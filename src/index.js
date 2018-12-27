@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 		document.getElementById("mySidenav").style.width = "0";
 	}
 
-	
+
 	document.getElementById("btn-open").addEventListener("click", openNav);
 	document.getElementById("btn-close").addEventListener("click", closeNav);
 
