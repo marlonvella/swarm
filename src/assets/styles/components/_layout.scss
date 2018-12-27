@@ -267,7 +267,7 @@ header {
 
 		&-banner-container {
 			min-height: 410px;
-			background-image: url("images/banner-image-1.jpg");
+			background-image: url('images/banner-image-1.jpg');
 			background-size: 100%;
 		}
 
@@ -696,7 +696,7 @@ header {
 
 			&-bg {
 				background-size: cover;
-				background-image: url("images/player-bg.png");
+				background-image: url('images/player-bg.png');
 				height: 200px;
 				width: 100%;
 				border-radius: 5px;
